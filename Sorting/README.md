@@ -1,30 +1,31 @@
-Sorting :
+Sorting:
 
 ----------------------------------------------------------------------------
 
-> Description : Sorting Algorithm 
+> Description: Sorting Algorithm 
 
-> How to Run :
+> How to Run:
 
-> How to 'Work' with Program : 
+> How to 'Work' with Program: 
 
-> Protocol Description : 
+> Protocol Description: 
 
 ----------------------------------------------------------------------------
-> Task 1 : 
+> Task 1: 
+
 (1)
-	Main structure :
-	Advantages :
+	Main structure:
+	Advantages:
 		- The system makes use of the code provided by making Node object abstract, the Sorter and Branch classes extend Node to implement behavior.
 		
 
-	Disadvantages :
+	Disadvantages:
 		- Static system. No dynamic interaction with the system, the end-user cannot make requests. Runs the tests in main and then breaks or hangs.
 		- Cannot handle new incoming requests for more branches and sorters to the system. Allowing dynamic requests requres more tests for the system as well scaling up the system. 
 		- The tests provided, while testing different options for numbers of branches and sorters, do not test different methods of the programs or different scales of data. I.E. the system should have multiple tests to see how the varied branch numbers handle different volumes of incoming data. 
 
 (2)
-	Experiment : Create two arrays of size 100 and 1,000. Populate with random numbers between 0-100 and 0-1,000. Each of current 3 variations of Branch and Sorter combinations will then run the 3 different types of arrays and print results
+	Experiment: Create two arrays of size 100 and 1,000. Populate with random numbers between 0-100 and 0-1,000. Each of current 3 variations of Branch and Sorter combinations will then run the 3 different types of arrays and print results
 
 | Branch/Sorter Combination     | Array Size | Time (ms) |
 | ----------------------------- | ---------- | --------- |
@@ -52,10 +53,10 @@ Sorting :
 | 3 Branch(es) / 5 Sorter(s)    | 100        | 794       |
 | 3 Branch(es) / 5 Sorter(s)    | 1000       | 7602      |
 
-	Result/Explanation : As 0 branches / 1 starter & 1 branch / 2 starters are the smallest means to run this system, the created branches fell inside of the existing range and one extending it. As expected, the two new tests fall within the expected range and scale that the previous tests had followed. The increasing size had minimal effect on the smaller array size, but grew exponentially in time for the greater branch/sorter combinations. In theory, spreading the work across multiple servers should be increasing the efficiency as the array size increases, however this is all being done by one computer across multiple servers. Theory : the times will be reduced when work begins to be spread across multiple systems on multiple servers. 
+	Result/Explanation: As 0 branches / 1 starter & 1 branch / 2 starters are the smallest means to run this system, the created branches fell inside of the existing range and one extending it. As expected, the two new tests fall within the expected range and scale that the previous tests had followed. The increasing size had minimal effect on the smaller array size, but grew exponentially in time for the greater branch/sorter combinations. In theory, spreading the work across multiple servers should be increasing the efficiency as the array size increases, however this is all being done by one computer across multiple servers. Theory: the times will be reduced when work begins to be spread across multiple systems on multiple servers. 
 
 (4)
 	WireShark displays many frames regarding the communication between the connections. Once running, Wireshark showed a lot of communication when run from gradle. 
 ----------------------------------------------------------------------------
-> Task 2 : 
+> Task 2: 
 

@@ -31,11 +31,9 @@ Sorting :
 | 0 Branch(es) / 1 Sorter(s)    | 20         | 55        |
 | 0 Branch(es) / 1 Sorter(s)    | 100        | 110       |
 | 0 Branch(es) / 1 Sorter(s)    | 1000       | 1038      |
-
 | 1 Branch(es) / 2 Sorter(s)    | 20         | 56        |
 | 1 Branch(es) / 2 Sorter(s)    | 100        | 331       |
 | 1 Branch(es) / 2 Sorter(s)    | 1000       | 1774      |
-
 | 3 Branch(es) / 4 Sorter(s)    | 20         | 125       |
 | 3 Branch(es) / 4 Sorter(s)    | 100        | 597       |
 | 3 Branch(es) / 4 Sorter(s)    | 1000       | 5554      |
@@ -50,7 +48,6 @@ Sorting :
 | 2 Branch(es) / 3 Sorter(s)    | 20         | 57        |
 | 2 Branch(es) / 3 Sorter(s)    | 100        | 427       |
 | 2 Branch(es) / 3 Sorter(s)    | 1000       | 3498      |
-
 | 3 Branch(es) / 5 Sorter(s)    | 20         | 135       |
 | 3 Branch(es) / 5 Sorter(s)    | 100        | 794       |
 | 3 Branch(es) / 5 Sorter(s)    | 1000       | 7602      |

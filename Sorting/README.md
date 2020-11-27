@@ -1,5 +1,3 @@
-Sorting:
-
 ----------------------------------------------------------------------------
 
 > Description: Sorting Algorithm 
@@ -57,6 +55,6 @@ Sorting:
 
 (4)
 	WireShark displays many frames regarding the communication between the connections. Once running, Wireshark showed a lot of communication when run from gradle. 
-----------------------------------------------------------------------------
+
 > Task 2: 
 

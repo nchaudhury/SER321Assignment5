@@ -1,0 +1,33 @@
+  
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+### IntelliJ IDEA ###
+.idea
+
+### Eclipse ###
+.settings
+
+### Eclipse Patch ###
+# Eclipse Core		
+.project
+
+### IntelliJ ###
+.idea
+
+# JDT-specific (Eclipse Java Development Tools)		
+.classpath
+
+### Gradle ###
+.gradle
+/build/
+
+# Mac DS file
+.DS_Store
+
+
+bin
+/classes/

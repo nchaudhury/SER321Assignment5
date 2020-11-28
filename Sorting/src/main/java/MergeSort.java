@@ -75,9 +75,8 @@ public class MergeSort {
 
 		String node = args[0];
 		int port = Integer.parseInt(args[1]);
-		String host = args[2];
 		if (node.equalsIgnoreCase("branch") || node.equalsIgnoreCase("master")) {
-			
+			String host = args[2];
 			if (node.equalsIgnoreCase("branch")) {
 				new Thread(new Branch(port, host, port + 1, port + 2)).start();
 			} else {
@@ -99,7 +98,7 @@ public class MergeSort {
 
 			// One branch / Two Sorters / Array 'a'
 			long startTime = System.currentTimeMillis();
-			Test(port, host, 'a');
+			Test(port, "localhost", 'a');
 			long endTime = System.currentTimeMillis();
 			long duration = endTime - startTime;
 			System.out.println("RESULTS:");

@@ -75,9 +75,9 @@ public class MergeSort {
 
 		String node = args[0];
 		int port = Integer.parseInt(args[1]);
-
+		String host = args[2];
 		if (node.equalsIgnoreCase("branch") || node.equalsIgnoreCase("master")) {
-			String host = args[2];
+			
 			if (node.equalsIgnoreCase("branch")) {
 				new Thread(new Branch(port, host, port + 1, port + 2)).start();
 			} else {
@@ -99,7 +99,7 @@ public class MergeSort {
 
 			// One branch / Two Sorters / Array 'a'
 			long startTime = System.currentTimeMillis();
-			Test(port, "localhost", 'a');
+			Test(port, host, 'a');
 			long endTime = System.currentTimeMillis();
 			long duration = endTime - startTime;
 			System.out.println("RESULTS:");
@@ -107,14 +107,14 @@ public class MergeSort {
 
 			// One branch / Two Sorters / Array 'b'
 			startTime = System.currentTimeMillis();
-			Test(port, "localhost", 'b');
+			Test(port, host, 'b');
 			endTime = System.currentTimeMillis();
 			duration = endTime - startTime;
 			System.out.println("TEST : 1 Branch / 2 Sorters / 100 Entry Array\nDuration: " + duration + " ms");
 
 			// One branch / Two Sorters / Array 'c'
 			startTime = System.currentTimeMillis();
-			Test(port, "localhost", 'c');
+			Test(port, host, 'c');
 			endTime = System.currentTimeMillis();
 			duration = endTime - startTime;
 			System.out.println("TEST : 1 Branch / 2 Sorters / 1000 Entry Array\nDuration: " + duration + " ms");
@@ -126,7 +126,7 @@ public class MergeSort {
 
 			// One branch / Two Sorters / Array 'a'
 			long startTime = System.currentTimeMillis();
-			Test(port, "localhost", 'a');
+			Test(port, host, 'a');
 			long endTime = System.currentTimeMillis();
 			long duration = endTime - startTime;
 			System.out.println("RESULTS:");
@@ -134,14 +134,14 @@ public class MergeSort {
 
 			// One branch / Two Sorters / Array 'b'
 			startTime = System.currentTimeMillis();
-			Test(port, "localhost", 'b');
+			Test(port, host, 'b');
 			endTime = System.currentTimeMillis();
 			duration = endTime - startTime;
 			System.out.println("TEST : 1 Sorters / 100 Entry Array\nDuration: " + duration + " ms");
 
 			// One branch / Two Sorters / Array 'c'
 			startTime = System.currentTimeMillis();
-			Test(port, "localhost", 'c');
+			Test(port, host, 'c');
 			endTime = System.currentTimeMillis();
 			duration = endTime - startTime;
 			System.out.println("TEST : 1 Sorters / 1000 Entry Array\nDuration: " + duration + " ms");

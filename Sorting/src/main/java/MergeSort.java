@@ -99,7 +99,7 @@ public class MergeSort {
 
 			// One branch / Two Sorters / Array 'a'
 			long startTime = System.currentTimeMillis();
-			Test(port, "localhost", 'a');
+			Test(port, host, 'a');
 			long endTime = System.currentTimeMillis();
 			long duration = endTime - startTime;
 			System.out.println("RESULTS:");

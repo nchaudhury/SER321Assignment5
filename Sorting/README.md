@@ -54,7 +54,7 @@
 	Result/Explanation: As 0 branches / 1 starter & 1 branch / 2 starters are the smallest means to run this system, the created branches fell inside of the existing range and one extending it. As expected, the two new tests fall within the expected range and scale that the previous tests had followed. The increasing size had minimal effect on the smaller array size, but grew exponentially in time for the greater branch/sorter combinations. In theory, spreading the work across multiple servers should be increasing the efficiency as the array size increases, however this is all being done by one computer across multiple servers. Theory: the times will be reduced when work begins to be spread across multiple systems on multiple servers. 
 
 (4)
-	WireShark displays many frames regarding the communication between the connections. Once running, Wireshark showed a lot of communication when run from gradle. 
+	WireShark displays many frames regarding the communication between the connections. Once running, Wireshark showed a lot of communication when run from gradle.  To reduce the number of traffic, filters can be used as well as optimization of the communication in the program. 
 
 > Task 2: 
 
